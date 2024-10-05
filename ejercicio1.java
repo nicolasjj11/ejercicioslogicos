@@ -6,7 +6,7 @@ public class ejercicio1 {
         Scanner scanner = new Scanner(System.in);
 
         // Entrada de los números a y b
-        System.out.print("Introduce el primer numero (a): ");
+        System.out.print("Introduce el primer número (a): ");
         int a = scanner.nextInt();
 
         System.out.print("Introduce el segundo número (b): ");
@@ -22,15 +22,18 @@ public class ejercicio1 {
         // Contador de números primos
         int contadorPrimos = 0;
 
-        // Recorrer el rango de a a b y contar los números primos
+        System.out.println("Números primos entre " + a + " y " + b + ":");
+
+        // Recorrer el rango de a a b y mostrar los números primos
         for (int i = a; i <= b; i++) {
             if (esPrimo(i)) {
+                System.out.print(i + " ");
                 contadorPrimos++;
             }
         }
 
-        // Mostrar el resultado
-        System.out.println("Números primos entre " + a + " y " + b + ": " + contadorPrimos);
+        // Mostrar el total de números primos
+        System.out.println("\nTotal de números primos: " + contadorPrimos);
     }
 
     // Método para verificar si un número es primo
@@ -46,3 +49,4 @@ public class ejercicio1 {
         return true;
     }
 }
+
